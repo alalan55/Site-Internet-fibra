@@ -1,0 +1,62 @@
+<div class="assine-agora" id="assineJa">
+
+    <div class="text-assine-agora">
+        <h1 class="display-4"> Assine agora</h1>
+        <p class="lead">Preencha o formulário abaixo para nossa equipe entrar em contato</p>
+    </div>
+
+    <div class="formulario-assine-agora">
+        <form [formGroup]="assinanteForm" (submit)="enviarForm()">
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Selecione o seu plano</label>
+                <select class="form-control" formControlName="plano">
+                  <option>5 MEGAS</option>
+                  <option>10 MEGAS</option>
+                  <option>15 MEGAS</option>
+                  <option>30 MEGAS</option>
+                  <option>50 MEGAS</option>
+                  <option>100 MEGAS</option>
+                </select>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-12 col-md-6">
+                    <label for="exampleFormControlInput1">CEP</label>
+                    <input type="text" class="form-control" formControlName="cep" cep [textMask]="{mask: MASKS.cep.textMask}">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="exampleFormControlInput1">Endereço</label>
+                    <input type="email" class="form-control" formControlName="endereco" >
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="exampleFormControlInput1">Número</label>
+                    <input type="number" class="form-control" formControlName="numero" >
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="exampleFormControlInput1">Complemento</label>
+                    <input type="email" class="form-control" formControlName="complemento">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="exampleFormControlInput1">Bairro</label>
+                    <input type="email" class="form-control" formControlName="bairro">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="exampleFormControlInput1">Nome</label>
+                    <input type="email" class="form-control" formControlName="nome">
+                  </div>
+                  
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="exampleFormControlInput1">Telefone</label>
+                    <input type="text" class="form-control" formControlName="telefone"  [textMask]="{mask: MASKS.telefone.textMaskFunction}">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="exampleFormControlInput1">Email</label>
+                    <input type="email" class="form-control" iformControlName="email">
+                  </div>
+                  <button type="submit" class="btn btn-outline-warning btn-rounded btn-block z-depth-0 my-4 waves-effect">Assine agora!</button>
+              </div>
+            
+            
+        
+          </form>
+    </div>
+</div>

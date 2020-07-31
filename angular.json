@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SPA-freela"
+    }
+  },
+  "defaultProject": "SPA-freela",
+  "cli": {
+    "analytics": "135c5f7a-725e-4331-a9bd-b159b7b4cc3d"
+  }
 }
